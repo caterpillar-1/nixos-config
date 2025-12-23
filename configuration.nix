@@ -98,7 +98,7 @@
   users.users.ctp = {
     isNormalUser = true;
     description = "Caterpillar";
-    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" "docker" ];
     packages = with pkgs; [
     ];
   };
