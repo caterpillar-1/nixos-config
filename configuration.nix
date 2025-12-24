@@ -23,6 +23,16 @@
     };
   };
 
+  # Multi-Arch
+  boot.binfmt.emulatedSystems = [
+    "riscv32-linux"
+    "riscv64-linux"
+    "wasm32-wasi"
+    "wasm64-wasi"
+    "aarch64-linux"
+    "x86_64-windows"
+  ];
+
   networking.hostName = "pc"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
